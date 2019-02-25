@@ -67,7 +67,7 @@ function custom_inhalt()
             'editor',
             'thumbnail',
             'page-attributes'),
-        'taxonomies' => array('category', 'post_tag'),
+        'taxonomies' => array('category', 'post_tag',),
         'menu_position' => 5,
         'exclude_from_search' => false
     );
@@ -75,3 +75,38 @@ function custom_inhalt()
 }
 
 add_action('init', 'custom_inhalt');
+
+
+function custom_taxonomies () {
+
+    // add new taxonomy hierarchical
+    $label = array(
+        'name' => 'Types',
+        'singluar_name' => 'Type',
+        'search_items' => 'Search Types',
+        'all_items' => 'All Types',
+        'parent_item' => 'Parent Type',
+        'parent_item_colon' => 'Parent Type',
+        'edit_item' => 'Edit Type',
+        'update_item' => 'Update Type',
+        'add_new_item' => 'Add New Type',
+        'new_item_name' => 'New Type Name',
+        'menu_name' => 'Type'
+    );
+
+    $args = array(
+        'hierarchical' => true,
+        'labels' => $label,
+        'show_ui' => true,
+        'show_admin_column' => true,
+        'query_var' => true,
+        'rewrite' => array( 'slug' => 'type' )
+    );
+
+    register_taxonomy('type', array( 'inhalte' ), $args);
+
+    // add new taxonomy not hierarchical
+
+}
+
+add_action('init', 'custom_taxonomies');

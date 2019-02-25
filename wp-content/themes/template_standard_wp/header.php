@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>Template Standard Wordpress</title>
     <?php wp_head() ?>
+    <meta charset="utf-8">
+    <title><?php the_title() ?></title>
 </head>
 
 <body>
