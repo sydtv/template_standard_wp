@@ -4,7 +4,6 @@ function register_my_menus() {
     register_nav_menus(
         array(
             'main-nav' => __( 'Main Nav' ),
-            'service-nav' => __( 'Service Nav' )
         )
     );
 }
@@ -22,7 +21,8 @@ function anchorIds($string)
 
 function template_standard_script_enqueue()
 {
-    wp_enqueue_style('customstyle', get_template_directory_uri() . '/styles/responsive.css', array(), '1.0.0', 'all');
+    wp_enqueue_style('font', 'https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet', array(), '1.0.0', 'all');
+    wp_enqueue_style('customstyle', get_template_directory_uri() . '/styles/import.css', array(), '1.0.0', 'all');
 }
 
 add_action('wp_enqueue_scripts', 'template_standard_script_enqueue');

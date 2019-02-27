@@ -9,11 +9,14 @@
 <body>
 
 <div class="header">
-    <nav>
-        <?php wp_nav_menu(array(
-            'theme_location' => 'main-nav',
-            'menu_id' => '', /* ID des ul-Elements (optional) */
-            'menu_class' => '', /* Klasse des ul-Elements (optional)*/
-            'container' => '')); ?>
-    </nav>
+    <div class="background-img" style="background: url(<?php echo(get_template_directory_uri() . '/images/header-img.jpg') ?>)">
+        <div class="overlay"></div>
+        <nav>
+            <?php wp_nav_menu(array(
+                'theme_location' => 'main-nav',
+                'menu_id' => '', /* ID des ul-Elements (optional) */
+                'menu_class' => '', /* Klasse des ul-Elements (optional)*/
+                'container' => '')); ?>
+        </nav>
+    </div>
 </div>

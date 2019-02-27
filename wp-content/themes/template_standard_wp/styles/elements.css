@@ -1,0 +1,144 @@
+.header .background-img,
+.header .overlay {
+    height: 100vh;
+}
+
+.header nav {
+    position: absolute;
+    z-index: 999;
+}
+
+.header nav a {
+    color: white;
+}
+
+.about .container {
+    padding: 75px 0;
+}
+
+.grey-full a {
+    color: #fff;
+}
+
+.about h2 {
+    padding-bottom: 25px;
+}
+
+.about p {
+    line-height: 2.5;
+    font-size: 20px;
+}
+
+.zitat p {
+    color: white;
+    text-align: center;
+}
+
+.zitat .zitat-text {
+    line-height: 2;
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+
+.news {
+    padding: 75px 0;
+}
+
+.news li {
+    margin: 50px 0 0 0;
+}
+
+.news li .flexcontainer {
+    align-items: center;
+}
+
+.news li img{
+    width: 100%;
+    height: auto;
+}
+.news li h2{
+    font-size: 25px;
+    text-align: left;
+    padding: 10px 30px;
+}
+
+.table {
+    color: white;
+}
+
+.table .grey-full {
+    padding: 30px 0;
+}
+
+.table td.column-1 {
+    text-align: left !important;
+}
+
+.contact-form {
+    padding: 75px 0;
+}
+
+.contact-form .container {
+    padding: 40px 0 0 0;
+}
+
+.contact-form label {
+    font-size: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin-top: 15px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wpforms-field {
+    margin-bottom: 40px;
+}
+
+.wpforms-field-hp {
+    display: none;
+}
+
+.contact-form button {
+    width: 50%;
+    padding: 10px;
+    font-size: 15px;
+    background: white;
+    border: 2px solid black;
+    margin-left: 25%;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.footer {
+    background: #383838;
+    color: white;
+    padding: 35px;
+}
+
+.footer .flexcontainer {
+    align-items: center;
+}
+
+.footer .text div {
+    float: left;
+    padding: 0 25px;
+}
+
+.footer .text div:first-child{
+    padding: 0 15px 0 0;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.footer .instagram img {
+    width: 60px;
+}
