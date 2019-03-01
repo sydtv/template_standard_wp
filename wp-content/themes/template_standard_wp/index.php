@@ -18,7 +18,7 @@
                 </div>
             <?php } elseif (has_term('news', 'type')) { ?>
 
-                <div class="news">
+                <div class="news" id="<?php echo anchorIds(strtolower(get_the_title())) ?>">
                     <h2><?php the_title() ?></h2>
                     <?php $wpb_all_query = new WP_Query(array('post_type' => 'post', 'post_status' => 'publish', 'posts_per_page' => -1)); ?>
 
@@ -57,13 +57,13 @@
 
                 </div>
             <?php } elseif (has_term('table', 'type')) { ?>
-                <div class="table">
+                <div class="table" id="<?php echo anchorIds(strtolower(get_the_title())) ?>">
                     <div class="grey-full">
                         <div class="container"><?php the_content() ?></div>
                     </div>
                 </div>
             <?php } elseif (has_term('contact', 'type')) { ?>
-                <div class="contact-form">
+                <div class="contact-form" id="<?php echo anchorIds(strtolower(get_the_title())) ?>">
                     <h2 class="contact-title"><?php the_title() ?></h2>
                     <div class="container flexcontainer">
                         <div class="three"></div>
@@ -73,10 +73,8 @@
                         <div class="three"></div>
                     </div>
                 </div>
-            <?php } elseif (has_term('pure-text', 'type')) { ?>
-                <p>pure-text</p>
             <?php } elseif (has_term('about', 'type')) { ?>
-                <div class="about">
+                <div class="about" id="<?php echo anchorIds(strtolower(get_the_title())) ?>">
                     <div class="container flexcontainer" id="<?php echo anchorIds(strtolower(get_the_title())) ?>">
                         <div class="eight">
                             <h2><?php the_title() ?></h2>

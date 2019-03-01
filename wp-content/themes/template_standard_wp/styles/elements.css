@@ -8,12 +8,41 @@
     z-index: 999;
 }
 
+.header nav ul li {
+    float: left;
+    font-size: 30px;
+    padding: 10px 35px;
+}
+
 .header nav a {
     color: white;
 }
 
+.header nav a:hover {
+    color: #c6ed2c;
+}
+
+.flexcontainer.navflex {
+    justify-content: center;
+}
+
+.header .bodynav {
+    width: 100%;
+    background: #383838;
+    display: flex;
+    justify-content: center;
+    -webkit-box-shadow: 0 9px 19px 0 rgba(0,0,0,0.75);
+    -moz-box-shadow: 0 9px 19px 0 rgba(0,0,0,0.75);
+    box-shadow: 0 9px 19px 0 rgba(0,0,0,0.75);
+}
+
+.fixed-nav .bodynav {
+    position: fixed;
+    top: 0;
+}
+
 .about .container {
-    padding: 75px 0;
+    padding: 100px 0 75px 0;
 }
 
 .grey-full a {

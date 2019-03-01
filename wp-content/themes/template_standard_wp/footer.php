@@ -19,5 +19,7 @@
     </div>
 </div>
 
+<?php _wp_footer_scripts() ?>
+
 </body>
 </html>
