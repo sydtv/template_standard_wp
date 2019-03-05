@@ -3,19 +3,34 @@
     height: 100vh;
 }
 
+.news-detail .header .background-img,
+.news-detail .header .overlay {
+    height: 60vh;
+}
+
+.news-detail .title {
+    top: 20vh;
+}
+
 .header nav {
     position: absolute;
     z-index: 999;
 }
 
+.header nav ul {
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
 .header nav ul li {
     float: left;
     font-size: 30px;
-    padding: 10px 35px;
 }
 
 .header nav a {
     color: white;
+    padding: 10px 35px;
 }
 
 .header nav a:hover {

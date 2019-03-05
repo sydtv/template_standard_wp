@@ -1,14 +1,15 @@
 <?php
 
-function register_my_menus() {
+function register_my_menus()
+{
     register_nav_menus(
         array(
-            'main-nav' => __( 'Main Nav' ),
+            'main-nav' => __('Main Nav'),
         )
     );
 }
 
-add_action( 'init', 'register_my_menus' );
+add_action('init', 'register_my_menus');
 
 add_theme_support('post-thumbnails');
 
@@ -19,28 +20,30 @@ function anchorIds($string)
     return str_replace($search, $replace, $string);
 }
 
-function template_standard_script_enqueue()
+function template_nadinekeller_script_enqueue()
 {
     wp_enqueue_style('font', 'https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet', array(), '1.0.0', 'all');
     wp_enqueue_style('customstyle', get_template_directory_uri() . '/styles/import.css', array(), '1.0.0', 'all');
 }
 
-add_action('wp_enqueue_scripts', 'template_standard_script_enqueue');
+add_action('wp_enqueue_scripts', 'template_nadinekeller_script_enqueue');
 
-function my_javascripts() {
-    wp_deregister_script( 'jquery' );
-    wp_enqueue_script( 'jquery',get_template_directory_uri() . '/scripts/jquery.min.js', array(),'1.0.0',true);
-    wp_enqueue_script( 'jqueryui',get_template_directory_uri() . '/scripts/jquery-ui.min.js', array(),'1.0.0',true);
-    wp_enqueue_script( 'main-script',get_template_directory_uri() . '/scripts/main.js', array(),'1.0.0',true);
+function my_javascripts()
+{
+    wp_deregister_script('jquery');
+    wp_enqueue_script('jquery', get_template_directory_uri() . '/scripts/jquery.min.js', array(), '1.0.0', true);
+    wp_enqueue_script('jqueryui', get_template_directory_uri() . '/scripts/jquery-ui.min.js', array(), '1.0.0', true);
+    wp_enqueue_script('main-script', get_template_directory_uri() . '/scripts/main.js', array(), '1.0.0', true);
 }
-add_action( 'wp_enqueue_scripts', 'my_javascripts' );
 
-function remove_admin_login_header() {
+add_action('wp_enqueue_scripts', 'my_javascripts');
+
+function remove_admin_login_header()
+{
     remove_action('wp_head', '_admin_bar_bump_cb');
 }
 
 add_action('get_header', 'remove_admin_login_header');
-
 
 
 function custom_inhalt()
@@ -83,7 +86,8 @@ function custom_inhalt()
 add_action('init', 'custom_inhalt');
 
 
-function custom_taxonomies () {
+function custom_taxonomies()
+{
 
     // add new taxonomy hierarchical
     $label = array(
@@ -106,10 +110,10 @@ function custom_taxonomies () {
         'show_ui' => true,
         'show_admin_column' => true,
         'query_var' => true,
-        'rewrite' => array( 'slug' => 'type' )
+        'rewrite' => array('slug' => 'type')
     );
 
-    register_taxonomy('type', array( 'inhalte' ), $args);
+    register_taxonomy('type', array('inhalte'), $args);
 
     // add new taxonomy not hierarchical
 

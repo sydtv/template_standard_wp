@@ -1,0 +1,107 @@
+@media screen and (max-width: 1200px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .about .container {
+        padding: 100px 20px 75px 20px;
+    }
+
+    .zitat-speaker p {
+        font-size: 20px;
+    }
+
+    .zitat-text p {
+        font-size: 22px;
+    }
+
+    .table td {
+        font-size: 22px;
+    }
+
+    .news .two {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .footer .flexcontainer {
+        display: block;
+    }
+
+    .footer .text {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .instagram {
+        padding: 20px 0 0 0;
+        margin-left: calc(50% - 30px);
+    }
+
+    .contact-form .flexcontainer {
+        display: block;
+        padding: 0 20px;
+    }
+
+    .contact-form .six {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .about .flexcontainer {
+        display: block;
+    }
+
+    .about .eight,
+    .about .four {
+        width: 100%;
+    }
+
+    .about .four {
+        margin-top: 25px;
+        height: 250px;
+    }
+
+    .zitat-speaker p,
+    .zitat-text p {
+        font-size: 18px;
+    }
+    .footer .text {
+        display: block;
+    }
+    .footer .text div {
+        float: none;
+        width: 100%;
+        padding: 5px 0;
+        text-align: center;
+    }
+    .footer .text div:first-child {
+        padding: 5px 0;
+    }
+    .instagram {
+        margin-left: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about .four {
+        margin-top: 25px;
+        height: 250px;
+    }
+
+    .about p {
+        line-height: 1.5;
+    }
+
+    .zitat-speaker p,
+    .zitat-text p {
+        font-size: 18px;
+    }
+
+    .header nav ul li {
+        font-size: 19px;
+    }
+}

@@ -36,6 +36,25 @@ table {
     margin: 0 !important;
 }
 
+img {
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
+.title {
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    top: 40vh;
+}
+
 .green {
     color: #c6ed2c;
 }
@@ -49,6 +68,11 @@ table {
     background-size: cover !important;
     background-repeat: no-repeat !important;
     background-position: center center !important;
+}
+
+.goback {
+    cursor: pointer;
+    font-weight: bold;
 }
 
 .flexcontainer {
@@ -78,6 +102,10 @@ table {
 
 .ten {
     width: calc(83.33% - 20px);
+}
+
+.twelve {
+    width: 100%;
 }
 
 .grey-full {
